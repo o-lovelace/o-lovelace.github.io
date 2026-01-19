@@ -19,10 +19,6 @@ function registerStore() {
           : "light"),
 
       init() {
-        document.documentElement.classList.toggle(
-          "dark",
-          this.current === "dark",
-        );
         this.updateFavicon();
       },
 

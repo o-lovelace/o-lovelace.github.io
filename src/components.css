@@ -1,0 +1,70 @@
+/* Essential Component Styles */
+
+.space-y-12>*+* {
+    margin-top: 3rem;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    font-family: var(--font-sans);
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    border: none;
+}
+
+.btn-mono {
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+/* Footer */
+footer {
+    margin-top: 6rem;
+    padding-bottom: 2rem;
+    border-top: 1px solid var(--border);
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+}
+
+@media (max-width: 640px) {
+    footer {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-link {
+    color: var(--foreground);
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}

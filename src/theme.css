@@ -43,7 +43,7 @@
   --border: var(--base-200);
   --input: var(--base-300);
   --ring: var(--base-950);
-  --radius: 0.5rem;
+  --radius: 0rem;
 
   --font-sans: "Satoshi", system-ui, -apple-system, sans-serif;
   --font-heading: var(--font-sans);
