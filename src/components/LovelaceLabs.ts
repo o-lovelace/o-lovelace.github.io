@@ -1,6 +1,6 @@
 export const LovelaceLabs = `
   <div>
-    <img src="/web-app-manifest-512x512.png" alt="Lovelace Logo" class="logo" />
+    <img src="web-app-manifest-512x512.png" alt="Lovelace Logo" class="logo" />
     <p class="text-lead text-pretty">
       <span class="font-black text-primary">Lovelace</span> is a software studio that builds and operates independent products.
     </p>

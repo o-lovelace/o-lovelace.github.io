@@ -39,7 +39,7 @@ function registerStore() {
       updateFavicon() {
         const favicon = document.querySelector('link[type="image/svg+xml"]');
         if (favicon) {
-          favicon.setAttribute("href", `/favicon-${this.current}.svg`);
+          favicon.setAttribute("href", `favicon-${this.current}.svg`);
         }
       },
     });
