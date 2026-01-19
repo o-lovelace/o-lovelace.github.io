@@ -81,15 +81,16 @@ li:not(:first-child) {
   filter: invert(100%);
 }
 
-#theme-toggle {
+.theme-toggle {
   background: none;
   border: none;
-  padding: 0;
   cursor: pointer;
-  color: var(--muted-foreground);
-  text-transform: lowercase;
+  color: inherit;
+  padding: 8px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
 }
 
-#theme-toggle:hover {
-  color: var(--primary);
+.theme-toggle:hover {
+  opacity: 1;
 }
