@@ -1,0 +1,89 @@
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    filter 0.3s ease;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  padding: 6rem 2rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-variation-settings: "opsz" 32;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  font-variation-settings: "opsz" 144;
+}
+
+/* Contextual Styles */
+.first\:mt-0:first-child {
+  margin-top: 0;
+}
+
+.even\:bg-muted:nth-child(even) {
+  background-color: var(--muted);
+}
+
+/* Semantic-like element handling */
+h1,
+h2,
+h3,
+h4,
+p,
+blockquote,
+ul,
+table {
+  margin-bottom: 1rem;
+}
+
+p:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+li:not(:first-child) {
+  margin-top: 0.5rem;
+}
+
+/* Theme Toggle */
+.theme-toggle-container {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.dark .logo {
+  filter: invert(100%);
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--muted-foreground);
+  text-transform: lowercase;
+}
+
+#theme-toggle:hover {
+  color: var(--primary);
+}

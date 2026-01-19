@@ -1,0 +1,172 @@
+.text-h1 {
+  scroll-margin: 5rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.text-h2 {
+  margin-top: 2.5rem;
+  scroll-margin: 5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  transition-property:
+    color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.text-h2:first-child {
+  margin-top: 0;
+}
+
+.text-h3 {
+  margin-top: 2rem;
+  scroll-margin: 5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.text-h4 {
+  scroll-margin: 5rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.text-p {
+  line-height: 1.75rem;
+}
+
+.text-p:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.text-blockquote {
+  margin-top: 1.5rem;
+  border-left: 2px solid var(--border);
+  padding-left: 1.5rem;
+  font-style: italic;
+}
+
+.text-ul {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.text-ul > li {
+  margin-top: 0.5rem;
+}
+
+.text-table-container {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.text-table {
+  width: 100%;
+}
+
+.text-table tr {
+  margin: 0;
+  border-top: 1px solid var(--border);
+  padding: 0;
+}
+
+.text-table tr:nth-child(even) {
+  background-color: var(--muted);
+}
+
+.text-table th,
+.text-table td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+.text-table th {
+  font-weight: 700;
+}
+
+.text-inline-code {
+  background-color: var(--muted);
+  position: relative;
+  border-radius: 0.25rem;
+  padding: 0.2rem 0.3rem;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.text-lead {
+  color: var(--muted-foreground);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-large {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.text-small {
+  font-size: 0.875rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+  font-size: 0.875rem;
+}
+
+/* Base Utility Classes (Kept for flexibility if needed) */
+.text-pretty {
+  text-wrap: pretty;
+}
+
+.scroll-m-20 {
+  scroll-margin: 5rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-black {
+  font-weight: 800;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.text-muted-foreground {
+  color: var(--muted-foreground);
+}
